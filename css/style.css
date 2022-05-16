@@ -5,47 +5,46 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
-
 .container {
   width: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-
 .card {
-  min-height: 80ch;
-  width: 35rem;
+  transform-style: preserve-3d;
+  min-height: 70vh;
+  width: 25rem;
   border-radius: 30px;
   padding: 0rem 5rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 .sneaker {
-  min-height: 35vh;
+  min-height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .sneaker img {
-  width: 20rem;
-  z-index: 2;
-}
-
-.circle {
   width: 15rem;
-  height: 15rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 10rem;
+  height: 10rem;
   background: linear-gradient(
     to right,
-    rgba(187, 24, 21, 0.75),
-    rgb(219, 15, 15)
+    rgba(245, 47, 44, 0.75),
+    rgba(204, 20, 20, 0.75)
   );
   position: absolute;
   border-radius: 50%;
@@ -54,22 +53,22 @@ body {
 
 .info h1 {
   font-size: 3rem;
+  transition: all 0.75s ease-out;
 }
-
 .info h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 2rem 0rem;
   color: #585858;
-  font-weight: lighter;
+  font-weight: 300;
+  transition: all 0.75s ease-out;
 }
-
 .sizes {
   display: flex;
   justify-content: space-between;
+  transition: all 0.75s ease-out;
 }
-
 .sizes button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.2rem;
   background: none;
   border: none;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -78,24 +77,21 @@ body {
   font-weight: bold;
   color: #585858;
 }
-
 button.active {
-  background-color: #585858;
+  background: #585858;
   color: white;
 }
-
 .purchase {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
+  transition: all 0.75s ease-out;
 }
-
 .purchase button {
   width: 100%;
   padding: 1rem 0rem;
-  background: #ff2a3a;
+  background: #f54642;
   border: none;
   color: white;
   cursor: pointer;
   border-radius: 30px;
   font-weight: 900;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
